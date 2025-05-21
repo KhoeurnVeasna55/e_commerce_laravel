@@ -13,6 +13,10 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.4.6
+  smooth_page_indicator: ^1.2.1
+  get: ^4.7.2
+  get_storage: ^2.1.1
 
 dev_dependencies:
   flutter_test:
@@ -20,5 +24,53 @@ dev_dependencies:
 
   flutter_lints: ^5.0.0
 
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/logo/logo.png
+  android: true
+  ios: false
+  android_12:
+    image: assets/logo/logo.png
+    icon_background_color: "#FFFFFF"
+
+
+  
+
 flutter:
   uses-material-design: true
+  assets: 
+    - assets/logo/
+    - assets/image/wellcome_image/
+
+  fonts:
+    - family: Battambang
+      fonts:
+        - asset: assets/fonts/khmer/Battambang-Black.ttf
+          weight: 900
+        - asset: assets/fonts/khmer/Battambang-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/khmer/Battambang-Light.ttf
+          weight: 300
+        - asset: assets/fonts/khmer/Battambang-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/khmer/Battambang-Thin.ttf
+          weight: 100
+    
+    - family: Koulen
+      fonts:
+        - asset: assets/fonts/khmer/Koulen-Regular.ttf
+          weight: 400
+
+    - family: SourceSansPro
+      fonts:
+        - asset: assets/fonts/en/SourceSansPro-Regular.otf
+          weight: 400
+        - asset: assets/fonts/en/SourceSansPro-Bold.otf
+          weight: 700
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/en/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/en/Poppins-Medium.ttf
+          weight: 500
+    
