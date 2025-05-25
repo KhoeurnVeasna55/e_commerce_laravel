@@ -17,6 +17,9 @@ dependencies:
   smooth_page_indicator: ^1.2.1
   get: ^4.7.2
   get_storage: ^2.1.1
+  http: ^1.4.0
+  lucide_icons_flutter: ^3.0.3
+  flutter_dotenv: ^5.2.1
 
 dev_dependencies:
   flutter_test:
@@ -41,7 +44,7 @@ flutter:
   assets: 
     - assets/logo/
     - assets/image/wellcome_image/
-
+    - .env
   fonts:
     - family: Battambang
       fonts:

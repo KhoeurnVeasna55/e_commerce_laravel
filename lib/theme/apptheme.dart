@@ -80,7 +80,7 @@ class AppTheme {
 
     iconTheme: IconThemeData(color: _lightScheme.onPrimary),
 
-    cardTheme: CardTheme(
+    cardTheme: CardThemeData(
       color: Colors.white,
       elevation: 3,
       shadowColor: AppColors.cardShadow,
@@ -90,15 +90,15 @@ class AppTheme {
 
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
-      fillColor: Colors.white,
-      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      fillColor: const Color.fromARGB(255, 230, 229, 229),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: primarySwatch[100]!),
+        borderSide: BorderSide.none,
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: primarySwatch),
+        borderSide: BorderSide.none,
       ),
       hintStyle: TextStyle(color: Colors.grey.shade600),
     ),
@@ -132,7 +132,7 @@ class AppTheme {
         fontFamily: 'Poppins',
         fontSize: 32,
         fontWeight: FontWeight.w700,
-        color: Colors.white,
+        color: Colors.black,
       ),
       titleLarge: TextStyle(
         fontFamily: 'Poppins',
@@ -149,7 +149,7 @@ class AppTheme {
       bodyMedium: TextStyle(
         fontFamily: 'Poppins',
         fontSize: 14,
-        color: Colors.black87,
+        color: Color.fromARGB(255, 41, 41, 41),
       ),
     ),
   );
@@ -165,12 +165,12 @@ class AppTheme {
       backgroundColor: Colors.transparent,
       elevation: 0,
       centerTitle: true,
-      foregroundColor: Color.fromARGB(255, 22, 18, 18),
+      foregroundColor: Colors.grey,
     ),
 
     iconTheme: IconThemeData(color: _darkScheme.onSurface),
 
-    cardTheme: CardTheme(
+    cardTheme: CardThemeData(
       color: _darkScheme.surface,
       elevation: 2,
       shadowColor: Colors.black45,

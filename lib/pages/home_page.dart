@@ -1,6 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:get/get.dart';
+import 'package:online_mart/pages/auth_page/login_page.dart';
 // import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 class HomePage extends StatefulWidget {
@@ -11,7 +12,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-   @override
+  @override
   void initState() {
     super.initState();
     initialization();
@@ -26,12 +27,16 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
-           child:  Text('Test ',style: TextStyle(
-            color: Colors.red
-           ),)
-          )
+            child: ElevatedButton(
+              onPressed: () {
+                Get.offAll(() => LoginPage());
+              },
+              child: Text('To Login'),
+            ),
+          ),
         ],
       ),
     );
