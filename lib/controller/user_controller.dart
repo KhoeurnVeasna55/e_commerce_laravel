@@ -1,12 +1,20 @@
+
+
 import 'package:get/get.dart';
-import 'package:online_mart/models/user_model.dart';
 
-
-
-class UserController extends GetxController{
-  
-    final RxList<UserModel> userModelList = <UserModel>[].obs;
-    
-    
+class UserController extends GetxController {
   
 }
+
+
+  // Future<void> fetchUser ()async {
+  //   try {
+  //     isLoading.value =true ;
+      
+  //   } catch (e) {
+  //     log('error to fetch user');
+  //   }
+  //   isLoading.value=false ; 
+  // }
+
+

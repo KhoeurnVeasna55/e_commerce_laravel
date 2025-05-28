@@ -8,6 +8,6 @@ void main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   await GetStorage.init(); 
-  await dotenv.load(fileName: ".env");
+   await dotenv.load(fileName: ".env");
   runApp(const MainPage());
 }
